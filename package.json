@@ -17,5 +17,10 @@
   },
   "scripts": {
     "start": "cds-serve"
-  }
+  },
+  "args":[
+    "--port",
+    "4003",
+    "--in-memory"
+  ]
 }
