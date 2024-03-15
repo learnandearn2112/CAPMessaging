@@ -10,17 +10,18 @@
     "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
     "express": "^4",
     "sqlite3": "^5.1.7",
-    "uuid": "^9.0.1"
+    "@sap/xssec": "^3"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1"
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7"
   },
   "scripts": {
     "start": "cds-serve"
   },
-  "args":[
-    "--port",
-    "4003",
-    "--in-memory"
-  ]
+  "cds": {
+    "requires": {
+      "auth": "xsuaa"
+    }
+  }
 }
